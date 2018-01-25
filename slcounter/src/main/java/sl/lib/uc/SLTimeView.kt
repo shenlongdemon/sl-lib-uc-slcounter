@@ -30,20 +30,6 @@ class SLTimeView @JvmOverloads constructor(
         this.setTime(0)
     }
 
-    var hourTittle: String = ""
-        get() = this.toString()
-        set(value) {
-            field = value
-            tvHour.text = field
-        }
-
-    var minuteTittle: String = ""
-        get() = this.toString()
-        set(value) {
-            field = value
-            tvMinute.text = field
-        }
-
     fun setTime(totalMinutes: Int) {
         var hour: Int = totalMinutes / 60;
         var minute: Int = totalMinutes % 60
