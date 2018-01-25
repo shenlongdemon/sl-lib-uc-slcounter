@@ -5,5 +5,6 @@ package sl.lib.uc;
  */
 
 public class SLCounter {
-
+    public  SLCounter(){}
+    public String getName(){return this.getClass().getName();}
 }
